@@ -43,7 +43,7 @@ class River
   
   def flood=(river_flood)
     @flood = river_flood
-    river_flood = (discharge+discharge/100*30)
+    river_flood = (discharge.to_f+discharge.to_f/100*30)
   end 
 end 
 
